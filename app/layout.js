@@ -53,6 +53,7 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
+  canonical: 'https://wealthsimple-referral-canada.vercel.app',
 }
 
 export const viewport = {
@@ -62,42 +63,38 @@ export const viewport = {
 }
 
 export default function RootLayout({ children }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FinancialProduct",
-    "name": "Wealthsimple Referral Code Canada - Get $25 Bonus",
-    "description": "Official Wealthsimple referral code for Canadian residents. Sign up and get $25 bonus when you deposit funds.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "CAD",
-      "description": "$25 referral bonus for new Wealthsimple accounts"
-    },
-    "provider": {
-      "@type": "Organization",
-      "name": "Wealthsimple",
-      "url": "https://www.wealthsimple.com"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Canada"
-    }
-  }
-
   return (
     <html lang="en-CA">
-      <head>
-        <link rel="canonical" href="https://wealthsimple-referral-canada.vercel.app" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.placename" content="Canada" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
       <body className="antialiased">
         {children}
         <Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FinancialProduct",
+              "name": "Wealthsimple Referral Code Canada - Get $25 Bonus",
+              "description": "Official Wealthsimple referral code for Canadian residents. Sign up and get $25 bonus when you deposit funds.",
+              "url": "https://wealthsimple-referral-canada.vercel.app",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "CAD",
+                "description": "$25 referral bonus for new Wealthsimple accounts"
+              },
+              "provider": {
+                "@type": "Organization",
+                "name": "Wealthsimple",
+                "url": "https://www.wealthsimple.com"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Canada"
+              }
+            })
+          }}
+        />
       </body>
     </html>
   )
