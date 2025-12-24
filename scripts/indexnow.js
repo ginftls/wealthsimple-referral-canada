@@ -1,5 +1,5 @@
 const host = 'wealthsimple-referral-canada.vercel.app';
-const key = '767600b997d5400da8612db14af2df15';
+const key = 'f91a46b41f9548f590ccdd2ba618988d';
 const urlList = [
     `https://${host}/`,
     `https://${host}/fr`,

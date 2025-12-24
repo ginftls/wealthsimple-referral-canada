@@ -5,9 +5,9 @@ I have implemented the necessary components to enable IndexNow functionality for
 ## Changes Made
 
 ### 1. Verification File
-I created a verification file at [767600b997d5400da8612db14af2df15.txt](./public/767600b997d5400da8612db14af2df15.txt) in the `public/` directory.
-- This file contains your API key: `767600b997d5400da8612db14af2df15`.
-- It is live and accessible at `https://wealthsimple-referral-canada.vercel.app/767600b997d5400da8612db14af2df15.txt`.
+I created a verification file at [f91a46b41f9548f590ccdd2ba618988d.txt](./public/f91a46b41f9548f590ccdd2ba618988d.txt) in the `public/` directory.
+- This file contains your API key: `f91a46b41f9548f590ccdd2ba618988d`.
+- It is live and accessible at `https://wealthsimple-referral-canada.vercel.app/f91a46b41f9548f590ccdd2ba618988d.txt`.
 
 ### 2. Submission Script
 I created a Node.js script at [indexnow.js](./scripts/indexnow.js) and successfully executed it.
