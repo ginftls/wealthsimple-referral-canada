@@ -37,6 +37,7 @@ export const metadata = {
     images: ['/og-image.jpg'],
   },
   alternates: {
+    canonical: 'https://wealthsimple-referral-canada.vercel.app',
     languages: {
       'en-CA': '/',
       'fr-CA': '/fr',
@@ -53,7 +54,9 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  canonical: 'https://wealthsimple-referral-canada.vercel.app',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export const viewport = {
