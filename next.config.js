@@ -11,15 +11,6 @@ const nextConfig = {
   },
   headers: async () => [
     {
-      source: '/sitemap.xml',
-      headers: [
-        {
-          key: 'X-Robots-Tag',
-          value: 'noindex'
-        },
-      ],
-    },
-    {
       source: '/((?!sitemap\\.xml|robots\\.txt|.*\\.txt|.*\\.xml|.*\\.html).*)',
       headers: [
         {

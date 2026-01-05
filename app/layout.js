@@ -37,7 +37,7 @@ export const metadata = {
     images: ['/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://wealthsimple-referral-canada.vercel.app',
+    canonical: 'https://wealthsimple-referral-canada.vercel.app/',
     languages: {
       'en-CA': '/',
       'fr-CA': '/fr',
@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
               "@type": "FinancialProduct",
               "name": "Wealthsimple Referral Code Canada - Get $25 Bonus",
               "description": "Official Wealthsimple referral code for Canadian residents. Sign up and get $25 bonus when you deposit funds.",
-              "url": "https://wealthsimple-referral-canada.vercel.app",
+              "url": "https://wealthsimple-referral-canada.vercel.app/",
               "offers": {
                 "@type": "Offer",
                 "price": "0",
